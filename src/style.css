@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-fonts: "Roboto", sans-serif;
+    ;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-fonts);
+    cursor: default;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 8vh;
+}
+
+small {
+    width: auto;
+    height: 20px;
+    padding: 0 50px;
+    margin: 0 50px;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    width: 500px;
+    height: 30px;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 700px;
+}
+
+ul li {
+    padding: 0 25px;
+    list-style: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.buttons {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.buttons button {
+    padding: 8px 40px;
+    border-radius: 19px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+/* basic animation  */
+
+/* nav bar list  */
+a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.10s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    box-shadow: 0 5px 20px black;
+}
+
+.hero-btn button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    box-shadow: 0 5px 20px black;
+}
+
+
+  /* section 1  */
+
+.hero-container {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 60px;
+}
+
+.top-text span {
+    font-size: 23px;
+}
+
+.top-text h1 {
+    font-size: 122px;
+}
+
+.fullstack-container {}
+
+.fullstack-container h4 {
+    font-size: 34px;
+    color: grey;
+    margin: 30px 0;
+}
+
+.fullstack-container p {
+    margin: 50px 0;
+    font-size: 16px;
+    color: rgba(100, 100, 100, 0.836);
+}
+
+
+.hero-btn {
+    display: flex;
+}
+
+.hero-btn div {
+    padding: 0 40px;
+
+}
+
+.hero-btn button {
+    padding: 5px 40px;
+    align-items: center;
+    display: flex;
+    border-radius: 12px;
+
+}
+
+.btn-1 button {
+    background-color: black;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-2 button {
+    background-color: white;
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+ /* section 2 */
+ 
+ .secend-container{
+    background-color: red;
+    width: 50vw;
+    height: 30vh;
+ }
+.globe-secend-container{
+    display: flex;
+    margin: 20px 120px;
+}
+ .secend-container div{
+    padding: 5px 0;
+}
+.about span{
+    margin: 0 50px ;
+}
+
+.icons-pack{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
