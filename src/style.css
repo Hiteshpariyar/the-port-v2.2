@@ -47,13 +47,13 @@ nav ul {
     margin-left: 700px;
 }
 
-ul li {
+ul a {
     padding: 0 25px;
     list-style: none;
 
 }
 
-ul li a {
+ul  a {
     text-decoration: none;
     color: black;
     position: relative;
@@ -76,19 +76,24 @@ ul li a {
 /* basic animation  */
 
 /* nav bar list  */
-a:hover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background: black;
-    transition: width 0.10s ease;
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease;
 }
 
 a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .buttons button:hover {
@@ -171,7 +176,6 @@ a:hover::after {
  /* section 2 */
  
  .secend-container{
-    background-color: red;
     width: 50vw;
     height: 30vh;
  }
